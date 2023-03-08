@@ -9,7 +9,7 @@ import { Observable } from "rxjs";
 import { filter, finalize, first, tap } from "rxjs/operators";
 import { AppState } from "../reducers";
 import { loadAllCourses } from "./course.actions";
-import { areCoursesLoaded } from "./reducers/course.reducers";
+import { areCoursesLoaded } from "./courses.selectors";
 
 @Injectable()
 export class CoursesResolver implements Resolve<any> {

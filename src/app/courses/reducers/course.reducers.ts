@@ -25,8 +25,3 @@ export const coursesReducer = createReducer(
 );
 
 export const { selectAll } = adapter.getSelectors();
-
-export const areCoursesLoaded = createSelector(
-  selectCoursesState,
-  (state) => state.allCoursesLoaded
-);
